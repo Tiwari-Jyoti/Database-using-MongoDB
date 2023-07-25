@@ -1,1 +1,3 @@
 # Database-using-MongoDB
+
+I have successfully created an E-commerce Website database using MongoDB, structured with distinct JSON-like documents for customers, sellers, coupons, wishlists, reviews, orders, product categories, payment details, shipment information, products. Each document is thoughtfully designed for cater to specific functionalities, ensuring a seamless user experience. Additionally, I have meticulously inserted Sample Data into each of these documents, allowing for comprehensive testing and validation. With this powerful MongoDB database in place, the E-commerce Website is now well-equipped to handle a diverse range of transactions, delivering an efficient and engaging platform for both customers and sellers.

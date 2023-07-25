@@ -1,0 +1,42 @@
+use ecommerce
+
+db.customer.insert({"customer_id":1000, "customer_name":"Gudiya", "delivery_address":"Delhi", "gender":"Male","email":"gmail@email.com", "dateOfBirth":"10/10/10", "password":"password", "contact_details":123456, "order_details":"Study_Lamp", "Payment_info":"Rupay Card details", "city":"Delhi", "typeOfCustomer":"Normal"});
+
+db.customer.insert({"customer_id":1010, "customer_name":"Jyoti", "delivery_address":"Mumbai", "gender":"Male", "email":"gmail@email.com", "dateOfBirth":"20/10/1999", "password":"password1234", "contact_details":123456789, "order_details":"Study_Lamp", "Payment_info":"Rupay Card details", "city":"Mumbai", "typeOfCustomer":"Premium"});
+
+db.seller.insert({"seller_id":1, "seller_name":"Skill-Lync", "seller_address":"Mumbai", "Mobile_num":123456, "password":"password", "categoriesOfProducts":5})
+
+db.seller.insert({"seller_id":2, "seller_name":"Skill", "seller_address":"Delhi", "Mobile_num":122323456, "password":"password", "categoriesOfProducts":3})
+
+db.product.insert({"product_id":1,"product_name":"shoes","product_color":"Green","sizesAvailable":7,"quantityOfProducts":10,"price":1000,"discount":34,"placeOfOrigin":"India","avgRatings":180,"revirwCountry":"India","reviewsForRatings":"Nice quality of shoe"})
+
+db.product.insert({"product_id":2,"product_name":"Shirts","product_color":"Blue","sizesAvailable":32,"quantityOfProducts":10,"price":1800, "discount":25, "placeOfOrigin": "India", "avgRatings":140, "revirwCountry":"India", "reviewsForRatings":"Nice quality of shoe"})
+
+db.product_Category.insert({"category_id":2,"category_name":"Painting","category_type":"Wall Paint"})
+
+db.product_Category.insert({"category_id":21,"category_name":"Lamp","category_type":"Study Lamp"})
+
+db.cart.insert({"product_id":1, "product_name":"shoes", "price":1000, "product_details":"About Product", "numOfProduct":2})
+
+db.cart.insert({"product_id":2, "product_name":"Paint", "price":2000, "product_details":"About Product", "numOfProduct":1})
+
+db.orders.insert({"order_id":1, "customer_id":10, "order_details": "Order Placed", "Shipment_adderss":"Delhi", "price":10000, "order_status":"Order Pending", "orderDate":"01-01-2022"})
+
+db.orders.insert({"order_id":2, "customer_id":12, "order_details": "Order Placed", "Shipment_adderss":"Mumbai", "price":5000, "order_status":1, "orderDate":"01-01-2022"})
+
+db.payment.insert({"payment_details":"Rupay Card", "payment_id":12, "totalAmount":12000, "Shipment_adderss":"Delhi"})
+
+db.payment.insert({"payment_details":"Rupay Card", "payment_id":15, "totalAmount":8000, "Shipment_adderss":"Mumbai"})
+
+db.coupon.insert({"coupon_id":1, "discount":23, "coupon_code":"A1TYMA&6"})
+
+db.coupon.insert({"coupon_id":2, "discount":35, "coupon_code":"QWERTY12126"})
+
+db.shipmentDetails.insert({"order_id":1, "customer_name":"Jyoti", "deliveryDate":"2022-02-02", "deliveryDay":"Tuesday", "deliveryTime":"10:30:00", "shipment_address":"Delhi"})
+
+db.shipmentDetails.insert({"order_id":2, "customer_name":"Gudiya", "deliveryDate":"2022-02-24", "deliveryDay":"Tuesday", "deliveryTime":"10:30:00", "shipment_address":"Mumbai"})
+
+db.reviews.insert({"reviewer_id":1, "avgRating":4.3, "totalRating":60, "reviewCountry":"India"})
+
+db.reviews.insert({"reviewer_id":2, "avgRating":3.9, "totalRating":40, "reviewCountry":"India"})
+
